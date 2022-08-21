@@ -1,0 +1,9 @@
+body{
+    background: url('');
+    /* background-size: auto; */
+    background-size: cover;
+    /*Even we can set the set the size of image manually.*/
+
+    background-repeat: no-repeat;
+    /*Other repeat propety are repeat-x and repeat-y.*/
+}

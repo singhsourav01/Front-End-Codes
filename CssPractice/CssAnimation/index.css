@@ -1,0 +1,40 @@
+.parent{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+}
+
+.child{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(234, 234, 135);
+}
+
+.parent:hover .child{
+    background-color: red;
+    transform: translateX(100%);
+
+    /*To convert the transition into animation just use animation*/
+    /* animation: example 1s ease-out; This is short-hand property.*/
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    0%{
+        transform: translateX(0%)
+    }    
+    33%{
+        transform: translateY(100%);
+    }
+    66%{
+        transform: translateX(100%) translateY(100%);
+    } 100%{
+        transform: translateX(100%);
+    }
+}
